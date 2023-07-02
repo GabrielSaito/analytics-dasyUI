@@ -4,179 +4,224 @@
       <a href="#" class="text-white font-semibold text-lg">Analytics</a>
     </div>
     <div class="flex items-center mx-auto">
-      
       <div>
         <div>
-          <input class="input input-bordered join-item bg-fundo" placeholder="Pesquisar"/>
+          <input
+            class="input input-bordered join-item bg-fundo"
+            placeholder="Pesquisar"
+          />
         </div>
       </div>
       <button class="btn btn-ghost btn-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
       </button>
 
       <div class="flex justify-end items-start fixed top-0 right-20 p-6">
         <ul class="list-none flex space-x-4">
-          <li><a class="text-white hover:text-gray-300" href="#">Link</a></li>
-          <li><a class="text-white hover:text-gray-300" href="#">Link</a></li>
-          <li><a class="text-white hover:text-gray-300" href="#">Link</a></li>
-          <li><a class="text-white hover:text-gray-300" href="#">Link</a></li>
-          <li><a class="text-white hover:text-gray-300" href="#">Link</a></li>
+          <li>
+          
+              <div class="badge badge-secondary ">
+                <img src="./../assets/icons/notification.png" />
+                +99</div>
+                
+            
+
+          </li>
         </ul>
       </div>
-      
-
-  
     </div>
     <div class="avatar online">
       <div class="w-8 rounded-full">
-        <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+        <img src="./../assets/icons/usuario.jpg" />
       </div>
     </div>
   </div>
 </header>
 
-
-<body  class="bg-fundo" > 
-  <div class="flex justify-end pl-64 ">
-  
-  
-      <div class="stat">
-        <div class="stat-title">Vendas</div>
-        <div class="stat-value">556</div>
-        <div class="stat-desc">Jan - Dezembro</div>
-      </div>
-      
-      <div class="stat">
-        <div class="stat-title">Lucro</div>
-        <div class="stat-value">618</div>
-        <div class="stat-desc">↗︎  62 (11.15%)</div>
-      </div>
-      
-      <div class="stat">
-        <div class="stat-title">Novos clientes</div>
-        <div class="stat-value">200</div>
-        <div class="stat-desc">↘︎ 90 (14%)</div>
-      </div>
-    
+<body class="bg-fundo">
+  <div class="flex justify-end pl-64">
+    <div class="stat">
+      <div class="stat-title">Vendas</div>
+      <div class="stat-value">556</div>
+      <div class="stat-desc">Jan - Dezembro</div>
     </div>
-  
-  
-  <div class=" flex justify-center bg-rgb-[23,20,42]">
-    <div class=" w-2/5 mt-8 h-96  bg-transparent p-1 shadow-lg">
-      <canvas class="w-3/6 h-20" baseChart
-              [datasets]="barChartData"
-              [labels]="barChartLabels"
-              [options]="barChartOptions"
-              [legend]="barChartLegend">
-       </canvas>
-    </div>   
-  </div>    
-   <div class="fixed bottom-0 w-full bg-fundo ">
-      <div class="flex justify-center">
-        <div class="w-2/5 mx-2">
-          <div class=" h-48  bg-graficos rounded-lg shadow-lg p-4 flex flex-row justify-between">
-            <div>
-              <div class="text-lg font-bold  ">Gráfico Doughnut</div>
-              <div class="flex justify-center">
-                <div class="flex justify-center space-x-4">
-                  <div class="radial-progress  text-purple-500" style="--value:70; --size:8rem; --thickness: 2rem;">70%</div>
-                  <div class="flex flex-col justify-center">
-                    <div class="legend mb-2 w-24">Legenda 1</div>
-                    <div class="legend mb-2 w-24">Legenda 2</div>
-                    <div class="legend mb-2 w-24">Legenda 3</div>
-                  </div>
-                  <div class="radial-progress text-yellow-500" style="  --value:54; --size:8rem; --thickness: 2rem;">54%</div>
-                  <div class="flex flex-col justify-center">
-                    <div class="legend mb-2 w-24">Legenda 1</div>
-                    <div class="legend mb-2 w-24">Legenda 2</div>
-                    <div class="legend mb-2 w-24">Legenda 3</div>
-                  </div>
-                </div>
+
+    <div class="stat">
+      <div class="stat-title">Lucro</div>
+      <div class="stat-value">618</div>
+      <div class="stat-desc">↗︎ 62 (11.15%)</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-title">Novos clientes</div>
+      <div class="stat-value">200</div>
+      <div class="stat-desc">↘︎ 90 (14%)</div>
+    </div>
+  </div>
+
+  <div class="flex justify-center bg-rgb-[23,20,42]">
+    <div class="w-2/5 mt-8 h-96 bg-transparent p-1 shadow-lg">
+      <canvas
+        class="w-3/6 h-20"
+        baseChart
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [legend]="barChartLegend"
+      >
+      </canvas>
+    </div>
+  </div>
+  <div class="fixed bottom-0 w-full bg-fundo">
+    <div class="flex justify-center">
+      <div class="w-2/5 mx-2">
+        <div
+          class="h-48 bg-graficos rounded-lg shadow-lg p-4 flex flex-row justify-between"
+        >
+          <div>
+            <div class="text-lg font-bold">Ganhos</div>
+            <div class="flex justify-center">
+              <div class="flex justify-center space-x-4">
+                <div
+                class="radial-progress text-purple-500"
+                style="--value: 70; --size: 8rem; --thickness: 1rem"
+              >
+                70%
                 
               </div>
-            </div>
-         
-          </div>
-        </div>
-        <div class="w-2/5 mx-2 mb-1" >
-          <div class="h-48  bg-graficos rounded-lg shadow-lg p-4 flex flex-row justify-between">
-            <div>
-              <div class="text-lg font-bold  ">Gráfico Progress</div>
-              <div class="space-y-2">
-                <progress class="progress progress-error  w-56" value="0" max="100"></progress><br>
-                <progress class="progress progress-error w-56" value="10" max="100"></progress><br>
-                <progress class="progress progress-warning  w-56" value="40" max="100"></progress><br>
-                <progress class="progress progress-secondary w-56" value="70" max="100"></progress><br>
-                <progress class="progress progress-accent w-56" value="100" max="100"></progress><br>
-              </div>
-            </div>
-            <div class="w-2/5 flex flex-col justify-center">
-              <div class="legend mb-2 w-24">Legenda 2</div>
-              <div class="legend mb-2 w-24">Legenda 2</div>
-              <div class="legend mb-2">Legenda 3</div>
-              <div class="legend mb-2">Legenda 4</div>
-              <div class="legend mb-2">Legenda 5</div>
-            </div>
-          </div>
-        </div>
-        <div class="w-2/5 mx-2 ">
-          
-          <div class="bg-graficos h-48   rounded-lg shadow-lg p-4 flex flex-row justify-between ">
-            
-            <div>
-              <div class="flex justify-center">
-                <!-- Conteúdo do Card 3 -->
-              </div>
-            </div>
-            <table class="table">
-              <!-- head -->
-              <thead>
-                <tr>
-                  <th>                  
-                  </th>
-                  
-                  <th>Nome do Vendedor</th>
-                  <th>Área</th>
-                 
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- row 1 -->
-                <tr>
-                  <th>
-                   
-                  </th>
-                  <td>
-                    <div class="flex items-center space-x-3">
-                      <div class="avatar">
-                        <div class="mask mask-squircle w-12 h-12">
-                          <img src="/tailwind-css-component-profile-2@56w.png" alt="Avatar Tailwind CSS Component" />
-                        </div>
-                      </div>
-                      <div>
-                        <div class="font-bold">Vendedor 1</div>
-                      </div>
-                    </div>
-                  </td>
-                  
-                  <td>nivel 2</td>
              
-                </tr>
-              </tbody>
-            </table>
+                <div class="flex flex-col justify-center">
+                  <div class="legend mb-2 w-24" style="font-size: 12px;">
+                    Boneco do tiquinho Soares</div>
 
+                    
+                  <div class="legend mb-2 w-24" style="font-size: 12px;">Purificador de Ar Inteligente A+
+                  </div>
+                  <div class="legend mb-2 w-24" style="font-size: 12px;">Drone Viper 500
+                  </div>
+                </div>
+                <div
+                  class="radial-progress text-yellow-500"
+                  style="--value: 54; --size: 8rem; --thickness: 1rem"  >54%
+                </div>
+          
+                <div class="flex flex-col justify-center">
+                  <div class="legend mb-2 w-24" style="font-size: 12px;">Drone Viper 500
+                  </div>
+                  <div class="legend mb-2 w-24"  style="font-size: 12px;">Fones de Ouvido sem Fio Z2
+                  </div>
+                  <div class="legend mb-2 w-24" style="font-size: 12px;">Purificador de Ar Inteligente A+
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="w-2/5 mx-2 mb-1">
+        <div
+          class="h-48 bg-graficos rounded-lg shadow-lg p-4 flex flex-row justify-between"
+        >
+          <div>
+            <div class="text-lg font-bold">Tendência de vendas
+            </div>
+            <div class="space-y-2">
+              <progress
+                class="progress progress-error w-56"
+                value="0"
+                max="100"
+              ></progress
+              ><br />
+              <progress
+                class="progress progress-error w-56"
+                value="10"
+                max="100"
+              ></progress
+              ><br />
+              <progress
+                class="progress progress-warning w-56"
+                value="40"
+                max="100"
+              ></progress
+              ><br />
+              <progress
+                class="progress progress-secondary w-56"
+                value="70"
+                max="100"
+              ></progress
+              ><br />
+              <progress
+                class="progress progress-accent w-56"
+                value="100"
+                max="100"
+              ></progress
+              ><br />
+            </div>
+          </div>
+          <div class="w-2/5 flex flex-col justify-center">
+            <div class="legend mb-2 w-24" style="font-size: 12px;">Smartwatch X1</div>
+            <div class="legend mb-2 w-24" style="font-size: 12px;">Fones de Ouvido sem Fio Z2</div>
+            <div class="legend mb-2" style="font-size: 12px;">Drone Viper 500</div>
+            <div class="legend mb-2" style="font-size: 12px;">Purificador de Ar Inteligente A+</div>
+            <div class="legend mb-2" style="font-size: 12px;">Boneco Tiquinho Soares</div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="w-2/5 mx-2">
+        <div
+          class="bg-graficos h-48 rounded-lg  p-4 flex flex-row justify-between"
+        >
+          <div>
+            <div class="flex justify-center">
+            </div>
+          </div>
+          <table class="table">
+            <thead>
+                <th></th>
+
+                <th>Nome do Vendedor</th>
+                <th>Área</th>
+
+            </thead>
+            <tbody>
+            
+                <th></th>
+                <td>
+                  <div class="flex items-center space-x-20">
+                    <div class="avatar">
+                      <div class="mask mask-squircle w-12 h-12 ">
+                        <img
+                          src="./../assets/icons/vendedor.jpg"
+                          alt="Avatar Tailwind CSS Component"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <div class="font-bold">John Textor </div>
+                    </div>
+                  </div>
+                </td>
+                <td>nivel 2</td>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
-    
-   
+  </div>
 </body>
- <footer>
-
-
- </footer>
-
-
-   
+<footer></footer>
